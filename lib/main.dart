@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xffB9143A),
       ),
-      home: LoginScreen(),
+      home: RegisterScreen(),
     );
   }
 }

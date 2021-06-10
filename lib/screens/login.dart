@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:hypernews/components/input_text.dart';
 import 'package:hypernews/components/logo-v.dart';
@@ -32,8 +34,14 @@ class _LoginScreenState extends State<LoginScreen> {
           'assets/images/bg.png',
           fit: BoxFit.cover,
         ),
+        BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+          child: Container(
+            decoration: new BoxDecoration(color: Colors.white.withOpacity(0.0)),
+          ),
+        ),
         Container(
-          color: Colors.white.withOpacity(0.7),
+          color: Colors.white.withOpacity(0.3),
         ),
         Scaffold(
           backgroundColor: Colors.transparent,

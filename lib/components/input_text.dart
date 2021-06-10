@@ -21,7 +21,7 @@ class HyperInputText extends StatelessWidget {
         ),
         controller: controller,
         decoration: InputDecoration(
-          fillColor: Colors.white.withOpacity(0.75),
+          fillColor: Colors.white.withOpacity(0.4),
           filled: true,
           hintText: hintText,
           labelText: labelText,
