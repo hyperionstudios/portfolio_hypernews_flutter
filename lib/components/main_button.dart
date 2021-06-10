@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HyperButton extends StatelessWidget {
   late VoidCallback onTap;
@@ -24,7 +25,14 @@ class HyperButton extends StatelessWidget {
         ),
       ),
       onPressed: onTap,
-      child: Text(text.toUpperCase()),
+      child: Text(
+        text,
+        style: GoogleFonts.dancingScript(
+          fontSize: 22,
+          letterSpacing: 3,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
     );
   }
 }

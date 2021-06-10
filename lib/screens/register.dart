@@ -103,7 +103,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               width: double.infinity,
               height: 55,
               child: HyperButton(
-                text: 'register',
+                text: 'Register',
                 onTap: () {},
               ),
             ),
@@ -120,9 +120,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
       ),
       child: Text(
         'Register New Account',
-        style: GoogleFonts.workSans(
+        style: GoogleFonts.dancingScript(
           color: Theme.of(context).primaryColor,
-          fontSize: 18,
+          fontSize: 22,
         ),
       ),
     );
